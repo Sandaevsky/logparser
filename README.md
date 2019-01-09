@@ -50,3 +50,28 @@ Activate
 
 > sudo chown YOUR-USER /etc/sv/errorsparser/supervise/control
 
+
+
+### How to use ###
+
+To check status
+
+> sv s errorsparser
+
+
+
+To restart
+
+> sv t errorsparser
+
+
+
+To stop
+
+> sv d errorsparser
+
+
+
+To start
+
+> sv u errorsparser
