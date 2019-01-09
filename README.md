@@ -1,8 +1,8 @@
 # logparser
 
-There is only one script *lookforapache.sh*. It should be executable. 
+There is only one script **lookforapache.sh**. It should be executable. 
 
-At take several variables like: *log to parse*, *combination to look for* (it might be 'Fatal error' or 'Out of memory') and *action*
+It takes several variables like: **log to parse**, **combination to look for** (it might be 'Fatal error' or 'Out of memory') and **action**
 Be default it sends email to server administrator but action can be easily adjusted
 
 
@@ -10,6 +10,7 @@ Be default it sends email to server administrator but action can be easily adjus
 
 It workes like deamon started by runit.
 On Debian systems install runit
+
 
 > apt-get update && apt-get install runit
 
@@ -24,6 +25,7 @@ Copy run script from repo
 > cp run /etc/sv/errorparser/
 
 
+
 *!*Adjust path in run script
 
 
@@ -33,7 +35,9 @@ Activate
 
 
 
+
 ## If you want to run deamon as non-privilieged user ##
+
 
 > sudo chmod 755 /etc/sv/errorsparser/supervise/
 
